@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: blanchedalmond;
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+}
+
+.app {
+  margin: 1rem;
+  padding: 1rem;
+  width: 400px;
+  height: 500px;
+  background-color: darkseagreen;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+  position: relative;
+}
+.app::-webkit-scrollbar {
+  width: 0;
+}
+.grid-notes {
+  padding: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type='text'] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid hotpink;
+  outline: none;
+  font-size: 2rem;
+}
+.button-section {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 420px) {
+  .app {
+    margin-bottom: 3rem;
+    width: 320px;
+    height: 80vh;
+    padding: 0.2rem;
+  }
+
+  ::placeholder {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}

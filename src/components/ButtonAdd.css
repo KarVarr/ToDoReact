@@ -1,0 +1,20 @@
+.button-add {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  color: rgb(120, 156, 120);
+  background-color: blueviolet;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 3px 2px rgb(122, 102, 141);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.button-add:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 1px grey;
+  color: darkseagreen;
+}
+.button-add:hover {
+  background-color: rgb(131, 15, 240);
+}

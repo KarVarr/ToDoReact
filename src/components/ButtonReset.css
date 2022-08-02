@@ -1,0 +1,17 @@
+.button-reset {
+  padding: 10px;
+  font-size: 2rem;
+  background-color: cadetblue;
+  color: darkseagreen;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.button-reset:active {
+  transform: translateY(0px);
+  animation: pulsate 1s ease-in-out;
+}
+.button-reset:hover {
+  background-color: rgb(59, 147, 150);
+  transform: translateY(-2px);
+}
